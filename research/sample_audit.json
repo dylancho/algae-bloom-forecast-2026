@@ -1,0 +1,291 @@
+{
+  "source": "C:\\Users\\dylan\\Downloads\\sample_participants.zip",
+  "tables": {
+    "algae_measure_sample.csv": {
+      "rows": 87,
+      "columns": [
+        "station_id",
+        "station_name",
+        "swmn_code",
+        "chck_de",
+        "iem_wtrtp",
+        "iem_ph",
+        "iem_doc",
+        "iem_trp",
+        "iem_tur",
+        "iem_chla",
+        "iem_bgalage_cell_co",
+        "iem_bgalage_microsts",
+        "iem_bgalage_anba",
+        "iem_bgalage_osrtria",
+        "iem_bgalage_apzo",
+        "iem_geosm",
+        "iem_mib2",
+        "iem_microstlr",
+        "dominant_genus",
+        "over_caution"
+      ],
+      "missing": {
+        "station_id": 0,
+        "station_name": 0,
+        "swmn_code": 0,
+        "chck_de": 0,
+        "iem_wtrtp": 3,
+        "iem_ph": 3,
+        "iem_doc": 3,
+        "iem_trp": 3,
+        "iem_tur": 3,
+        "iem_chla": 3,
+        "iem_bgalage_cell_co": 3,
+        "iem_bgalage_microsts": 3,
+        "iem_bgalage_anba": 3,
+        "iem_bgalage_osrtria": 3,
+        "iem_bgalage_apzo": 3,
+        "iem_geosm": 20,
+        "iem_mib2": 20,
+        "iem_microstlr": 14,
+        "dominant_genus": 4,
+        "over_caution": 3
+      },
+      "chck_de": [
+        "2026-07-02",
+        "2026-09-10"
+      ],
+      "station_id": {
+        "MGMR": 19,
+        "CS": 18,
+        "DCHN": 18,
+        "GJGR": 18,
+        "HP": 14
+      }
+    },
+    "asos_daily_sample.csv": {
+      "rows": 60,
+      "columns": [
+        "stnId",
+        "stnNm",
+        "tm",
+        "avgTa",
+        "maxTa",
+        "minTa",
+        "sumRn",
+        "avgWs",
+        "avgRhm",
+        "sumSsHr",
+        "sumGsr",
+        "avgTs"
+      ],
+      "missing": {
+        "stnId": 0,
+        "stnNm": 0,
+        "tm": 0,
+        "avgTa": 0,
+        "maxTa": 0,
+        "minTa": 0,
+        "sumRn": 31,
+        "avgWs": 0,
+        "avgRhm": 0,
+        "sumSsHr": 0,
+        "sumGsr": 4,
+        "avgTs": 0
+      },
+      "tm": [
+        "2026-08-10",
+        "2026-08-24"
+      ],
+      "stnNm": {
+        "대구": 15,
+        "부산": 15,
+        "의령군": 15,
+        "구미": 15
+      }
+    },
+    "dam_daily_sample.csv": {
+      "rows": 60,
+      "columns": [
+        "obs_date",
+        "dam_code",
+        "dam_name",
+        "suge",
+        "rwl",
+        "iqty",
+        "tdqty",
+        "edqty",
+        "spdqty",
+        "otltdqty",
+        "itqty",
+        "rf"
+      ],
+      "missing": {
+        "obs_date": 0,
+        "dam_code": 0,
+        "dam_name": 0,
+        "suge": 0,
+        "rwl": 0,
+        "iqty": 0,
+        "tdqty": 0,
+        "edqty": 0,
+        "spdqty": 0,
+        "otltdqty": 0,
+        "itqty": 0,
+        "rf": 0
+      },
+      "obs_date": [
+        "2026-08-10",
+        "2026-08-24"
+      ],
+      "dam_name": {
+        "안동": 15,
+        "합천": 15,
+        "남강": 15,
+        "대청": 15
+      }
+    },
+    "eval_pairs_sample.csv": {
+      "rows": 75,
+      "columns": [
+        "station_id",
+        "station_name",
+        "base_date",
+        "target_date",
+        "lag_days",
+        "split"
+      ],
+      "missing": {
+        "station_id": 0,
+        "station_name": 0,
+        "base_date": 0,
+        "target_date": 0,
+        "lag_days": 0,
+        "split": 0
+      },
+      "base_date": [
+        "2026-07-02",
+        "2026-09-03"
+      ],
+      "target_date": [
+        "2026-07-09",
+        "2026-09-10"
+      ],
+      "station_id": {
+        "MGMR": 17,
+        "GJGR": 16,
+        "DCHN": 16,
+        "CS": 15,
+        "HP": 11
+      },
+      "split": {
+        "test": 75
+      },
+      "lag_days": {
+        "7": 51,
+        "6": 7,
+        "8": 6,
+        "4": 5,
+        "9": 3,
+        "10": 2,
+        "5": 1
+      }
+    },
+    "sample_submission_sample.csv": {
+      "rows": 75,
+      "columns": [
+        "station_id",
+        "base_date",
+        "target_date",
+        "pred_cells"
+      ],
+      "missing": {
+        "station_id": 0,
+        "base_date": 0,
+        "target_date": 0,
+        "pred_cells": 0
+      },
+      "base_date": [
+        "2026-07-02",
+        "2026-09-03"
+      ],
+      "target_date": [
+        "2026-07-09",
+        "2026-09-10"
+      ],
+      "station_id": {
+        "MGMR": 17,
+        "GJGR": 16,
+        "DCHN": 16,
+        "CS": 15,
+        "HP": 11
+      }
+    },
+    "stations.csv": {
+      "rows": 5,
+      "columns": [
+        "station_id",
+        "station_name",
+        "swmn_code",
+        "swmn_nm",
+        "river_lake",
+        "section",
+        "suge",
+        "asos_stn_id",
+        "asos_stn_nm",
+        "asos_alt",
+        "service_start",
+        "note"
+      ],
+      "missing": {
+        "station_id": 0,
+        "station_name": 0,
+        "swmn_code": 0,
+        "swmn_nm": 0,
+        "river_lake": 0,
+        "section": 0,
+        "suge": 0,
+        "asos_stn_id": 0,
+        "asos_stn_nm": 0,
+        "asos_alt": 4,
+        "service_start": 0,
+        "note": 1
+      },
+      "station_id": {
+        "HP": 1,
+        "GJGR": 1,
+        "CS": 1,
+        "MGMR": 1,
+        "DCHN": 1
+      }
+    }
+  },
+  "diagnostics": {
+    "missing_base_cells_in_pairs": 3,
+    "missing_target_cells_in_pairs": 0,
+    "duplicate_station_target_pairs_beyond_first": 9,
+    "duplicate_station_measurement_rows": 0,
+    "genus_total_mismatches": 0,
+    "observed_target_summary": {
+      "count": 84.0,
+      "mean": 48147.642857142855,
+      "std": 84607.6178914671,
+      "min": 0.0,
+      "25%": 10082.25,
+      "50%": 24453.0,
+      "75%": 48980.0,
+      "max": 489500.0
+    },
+    "missing_target_measurement_rows": [
+      {
+        "station_id": "CS",
+        "chck_de": "2026-07-20"
+      },
+      {
+        "station_id": "GJGR",
+        "chck_de": "2026-07-20"
+      },
+      {
+        "station_id": "HP",
+        "chck_de": "2026-07-20"
+      }
+    ]
+  },
+  "note": "Descriptive audit only. No fitting, tuning, or model comparison on sample test labels."
+}

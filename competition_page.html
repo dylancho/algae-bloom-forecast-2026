@@ -1,0 +1,1089 @@
+﻿
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var context = '/competition';
+	function getContextPath(){
+		if('' == context){
+			return context;
+		}else{
+			return context;
+		}
+	}
+</script>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<style>
+		body {
+		    font-family: '나눔스퀘어', 'NanumSquare', '나눔고딕', 'Nanum Gothic', sans-serif !important;
+		}
+		
+		button, input, optgroup, select, textarea {
+		    font-size: 13px !important;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="/competition/css/style_sub1.css"  />
+	
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="subject" content="2026 DATA·AI 분석 경진대회">
+<meta name="title" content="2026 DATA·AI 분석 경진대회">
+<meta name="keywords" content="2026 DATA·AI 분석 경진대회">
+<meta name="copyright" content="Copyright ⓒ KISTI. All Rights Reserved.">
+<title>2026 DATA·AI 분석 경진대회</title>
+
+<link rel="stylesheet" type="text/css" href="/competition/css/basic.css"  />
+<link rel="stylesheet" type="text/css" href="/competition/css/rjaccordion2.css">
+<link rel="stylesheet" type="text/css" href="/competition/css/btn.css">
+<link rel="stylesheet" href="/competition/css/style.css">
+<link rel="shortcut icon" href="/competition/images/favicon.ico" type="image/x-icon">
+
+<!-- DataTables 1.13.6 CSS -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+  integrity="sha512-v4MzMghBi/neDdZsmQPOxz8DEvwxElBTOeMAG+Mzpzwgw28jjfznCm+MzqF2tPomQVs1fIgsgYD2jxwrCIC70w=="
+  crossorigin="anonymous">
+
+<!-- DataTables Buttons 2.4.2 CSS -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css"
+  integrity="sha512-7+jqVuWLY+XGqvyKxw1JbtdyqHVu5zzsKx4VgpmhokImIEITDxiFdXJvp4AQxEUyMAcbzMbCgt36NoxusY3xrw=="
+  crossorigin="anonymous">
+
+
+<!-----메인메뉴 스크립트------------------------>
+<script type="text/javascript" src="/competition/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/competition/js/js2/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="/competition/js/js2/modernizr.js"></script>
+<script type="text/javascript" src="/competition/js/js2/animated-header.js"></script>
+
+<script type="text/javascript" src="/competition/js/main.js"></script>
+<script type="text/javascript" src="/competition/js/utils.js"></script>
+<script type="text/javascript" src="/competition/js/js2/jquery.js"></script>
+<!-- DataTables 1.13.6 JS -->
+<script
+  type="text/javascript"
+  src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"
+  integrity="sha512-aZVdJkG8B8bXWj+iKu3Kwz0d0KZlu/cZeQpdQYOuZ8BCrwRdMqOb9/LNxihZ07fEy/uRgqXOTB86Rn11vTHYHA=="
+  crossorigin="anonymous"></script>
+
+<!-- DataTables Buttons 2.4.2 JS -->
+<script
+  type="text/javascript"
+  src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"
+  integrity="sha512-ch0uyn56lCAshiK9KuwjUOGvAZ6w9CgFAGxU1Eo0KPphiNIEb7LEXnFFY4g6OH9mPYPDG7u5YAU2gMz3SXZ92w=="
+  crossorigin="anonymous"></script>
+
+<!-- JSZip 3.10.1 -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"
+  integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg=="
+  crossorigin="anonymous"></script>
+
+<!-- pdfmake vfs_fonts 0.1.53 -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"
+  integrity="sha512-vv3EN6dNaQeEWDcxrKPFYSFba/kgm//IUnvLPMPadaUf5+ylZyx4cKxuc4HdBf0PPAlM7560DV63ZcolRJFPqA=="
+  crossorigin="anonymous"></script>
+
+<!-- DataTables Buttons HTML5 2.4.2 -->
+<script
+  type="text/javascript"
+  src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"
+  integrity="sha512-kpueMe3NSqueH05VXweXpFEKvCKV4HkFu/IY3XRNYrOuJd6Aucmr7++JDBNXNP/WvKvEFV0f8O2Vy73siwiZ9Q=="
+  crossorigin="anonymous"></script>
+
+
+<!-- moment.js 2.30.1 -->
+<script
+  src="https://cdn.jsdelivr.net/npm/moment@2.30.1/min/moment.min.js"
+  integrity="sha256-hFxSSWnt1bOvmqbYcY0p/pLo2+JblVIUqOBkoFqaUCc="
+  crossorigin="anonymous"></script>
+
+<!-- daterangepicker 3.1 JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1/daterangepicker.min.js"
+  integrity="sha512-aUTXuNAcL7SWQP3yJvUVNsSNGd95jX/aMgTRKQNrd1LV3q//cInGij+F6pVFLj2PRUMt8+SfJtBBaLU/YliOJw=="
+  crossorigin="anonymous"></script>
+
+<!-- daterangepicker 3.1 CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/daterangepicker@3.1/daterangepicker.css"
+  integrity="sha512-Smmn5woClf+IFVSxAH1c+pLh+zh4Li0I6O6oLLF/EpwNonCy4JvNvv7Eonx5OSR+qfKqnJ+sahjIBvYTEHl84Q=="
+  crossorigin="anonymous">
+
+<!---모바일메뉴---------------->
+<script src="/competition/js/js2/mobile_menu.js"></script>
+
+<!-- google tag //-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHFK3F3QLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JHFK3F3QLE');
+</script>
+<!-- //google tag -->
+	<script type="text/javascript">
+	  	function getCookie(cookie_name) {
+		    var x, y;
+		    var val = document.cookie.split(';');
+		    for (var i = 0; i < val.length; i++) {
+		        x = val[i].substr(0, val[i].indexOf('='));
+		        y = val[i].substr(val[i].indexOf('=') + 1);
+		        x = x.replace(/^\s+|\s+$/g, '');
+		        // 앞과 뒤의 공백 제거하기
+		        if (x == cookie_name) {
+		            return unescape(y);
+		            // unescape로 디코딩 후 값 리턴
+		        }
+		    }
+		}
+	
+		var isSessionExpired = function(){
+			var sessionExpiry = Math.abs(getCookie('sessionExpiry'));
+			return sessionExpiry-new Date() <= 0
+	
+		}
+	
+		function checkSessionExpired(){
+			var isExpired = isSessionExpired();
+			if(isExpired === true){
+				document.location = "/session-timeout";
+			}else{
+				setTimeout(checkSessionExpired, 10*1000);
+			}
+		}
+		
+		$(function(){
+			if(getCookie('sessionExpiry') !== '')
+				checkSessionExpired();
+		})
+	  
+		/* 페이지 로딩후 호출해야됨 */
+		function onloading() {
+			if ("" != "") {
+				alert("");
+			}
+		}
+		
+		function fn_list() {
+			window.location.href = "/competition/main/main.do";
+		}
+		
+		function fn_delete() {
+			if (confirm('삭제하시겠습니까?')) {
+				document.frm.action = "/competition/adm/problem/deleteProblemInfo.do";
+				document.frm.submit();
+			}	
+		}
+		
+		function fn_moveUpdt() {
+			document.frm.action = "/competition/problem/PROB_000000000004602/updtProblemInfo.do";
+			document.frm.submit();
+		}
+		
+		function fn_moveUpdtOverview(){
+			openEditor();
+			$('#saveOverview').show();
+		}
+		
+		let g_overview;
+		let g_curIndex = 0;
+		let mdEditorView1;
+		const contextPath = getContextPath();
+	
+		//document.querySelector('link[href="'+'/competition'+'/css/basic.css"]').remove();
+		$(function(){
+			setDday();
+			loadOverviewList();
+
+			var targetTime = new Date('2026-09-05T00:00:00+09:00');
+			if (new Date() >= targetTime) {
+				$('a[href*="/problem/apply.do"]').hide();
+			}
+		});
+		
+		function loadOverviewList(){
+			$.ajax({
+				url : getContextPath()+"/main/problem/loadOverview.do?probId="+document.frm.probId.value,
+				type : 'get',
+				dataType: 'json',
+			}).done(function(data, status, xhr) {
+				if(data.msg == 'OK'){
+					if(data.overviewListSize > 0){
+						g_overview = data.overviewList;
+						if(mdEditorView1){
+							mdEditorView1.editor.remove();
+						}
+					}else{
+						g_overview = [];
+					}
+				}		
+			}).fail(function(xhr, status, error) {
+				console.log("failed");
+			}).then(function() {
+				document.frm.overviewId.value = g_overview[0].overviewId;
+				g_curIndex = parseInt(document.frm.contentIndex.value);
+				if(g_curIndex === 0 || g_curIndex === 1) {
+					loadOverviewContent(g_curIndex);
+				}
+				setTabs();
+			});
+		}
+
+		function setResultFileIcon() {
+			let filename = '';
+			if(filename === '') return;
+
+			let lastIndex = filename.lastIndexOf(".");
+			let ext = filename.substring(lastIndex + 1);
+			let classname = "";
+
+			switch (ext) {
+				case "csv": case "xlsx": case "xlsm": case "xls": case "tsv":
+					classname = "excel";
+					break;
+				case "pdf": case "work": case "hwp": case "ppt":
+					classname = ext;
+					break;
+				default:
+					classname = "etc";
+					break;
+			}
+			document.getElementsByName('result_icon').className = classname;
+		}
+		
+		function setDday(){
+			const today = moment();
+			const startDatePartcpnt = moment("2026-09-15").add(1, 'days');
+			const endDatePartcpnt = moment("2026-11-06").add(1, 'days');
+			const endDate = moment("2026-11-06").add(1, 'days');
+			const titleStr = $('#title').text();
+			
+			
+			if(titleStr.includes('[문제발굴]')){
+				if(today.isBefore(endDate)){
+					ddayText = "종료 D - " + endDate.diff(today,'days');
+					$('#dDayText').text(ddayText);
+				}
+				if(today.isAfter(endDate)){
+					ddayText = "종료";
+					$('#dDayText').text(ddayText);
+				}
+			}else{
+				if(today.isBefore(startDatePartcpnt)){
+					ddayText = "참가신청 D - " + startDatePartcpnt.diff(today,'days');
+					$('#dDayText').text(ddayText);
+					$('#partcpntRange').show();
+				}
+				
+				if(today.isAfter(startDatePartcpnt) && today.isBefore(endDatePartcpnt)){
+					ddayText = "참가신청 마감 D - " + endDatePartcpnt.diff(today,'days');
+					$('#dDayText').text(ddayText);
+					$('#partcpntRange').show();
+				}
+				
+				if(today.isAfter(endDatePartcpnt) && today.isBefore(endDate)){
+					ddayText = "종료 D - " + endDate.diff(today,'days');
+					$('#dDayText').text(ddayText);
+				}
+				
+				if(today.isAfter(endDate)){
+					ddayText = "종료";
+					$('#dDayText').text(ddayText);
+				}
+			}
+		}
+		
+		function fn_goback(){
+			window.history.go(-1);
+		}
+	</script>
+</head>
+
+<body>
+	<!-- wrap  -->
+	<div id="wrap">
+		<!-- 모바일 메뉴 불러오기 -->
+		
+
+
+
+
+
+
+
+<script type="text/javascript">
+function alertW(){
+	alert("신청기간이 아닙니다.");	
+}
+</script>
+<header> <a id="cd-logo" href="/competition/main/main.do"><img src="/competition/images/logo_top1.png" alt="Homepage" /><span><strong>DATA·AI</strong>분석 경진대회</span></a> 
+<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a> </header>
+<nav id="cd-lateral-nav">
+  <ul class="cd-navigation">
+  	
+    <li class="item-has-children"><a href="/competition/guide/partcpnt">도움말</a></li>
+    <li class="item-has-children"><a href="/competition/main/competition/active/list.do">경진대회</a></li>
+  	<li class="item-has-children"><a href="/competition/main/problem/active/list.do">문제목록</a></li>
+    <li class="item-has-children"><a href="/competition/main/qna.do">Q & A</a></li>
+    <li class="item-has-children"><a href="/competition/main/notice.do">공지사항</a></li>
+    
+        <li class="item-has-children"><a href="/competition/mypage/mypage.do">로그인</a></li>
+    
+  </ul>
+</nav>
+<!-- //모바일메뉴  --> 
+		<!-- 문제에 대한 권한 체크 -->
+		
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- 메인메뉴// -->
+		<div id="header">
+			
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var context = '/competition';
+	function getContextPath(){
+		if('' == context){
+			return context;
+		}else{
+			return context;
+		}
+	}
+</script>
+
+<script>
+    function goMain() {
+        window.location.href = getContextPath() + "/main/main.do";
+    }
+
+    function goMy() {
+        window.location.href = getContextPath() + "/mypage/mypage.do";
+    }
+
+    function goLogin() {
+        //TODO x
+        window.location.href = getContextPath() + "/mypage/mypage.do";
+
+        //window.location.href = getContextPath()+"/login/login.do";
+
+    }
+</script>
+
+<div class="accordion accordion2">
+    <div class="accordion-section">
+        <div class="accordion-wrap">
+            <ul>
+                <a href="javascript:goMain();">
+                    <li class="logo"><span><strong>DATA·AI</strong>분석 경진대회</span></li>
+                </a>
+                <li class="menu">
+               <span class="member_link">
+                
+                    <p class="gnb _first" style="margin-left:20px !important;" onclick="javascript:goLogin();"><a class="top_member" href="javascript:goLogin();" target="" title="로그인페이지 이동">로그인</a></p>
+                
+			  
+			  <p class="gnb"><a class="gotoaida" href="/">AIDA 홈</a></p>
+              <p class="gnb"><a class="gotoaida" href="https://dataon.kisti.re.kr">DataON</a></p>
+              <p class="gnb"><a class="gotoaida" href="/competition/guide/partcpnt">도움말</a></p>
+               </span>
+                    <span class="gnb_menu">
+                      <p><a class="accordion-section-header"
+                            href="/competition/main/overview.do">대회소개</a></p>  
+                      <p><a class="accordion-section-header"
+                            href="/competition/main/competition/active/list.do">경진대회</a></p>
+                      <p><a class="accordion-section-header"
+                            href="/competition/main/problem/active/list.do">문제목록</a></p>
+                      <p><a class="accordion-section-header" href="/competition/main/notice.do">공지사항</a></p>
+                      <p><a class="accordion-section-header"
+                            href="/competition/main/qna.do">Q&A</a></p>
+                      
+                   </span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+		</div>
+		<!-- //메인메뉴 -->
+		<div class="top_space" ></div><!-----//절대 지우지 말것. 상단공간활용을 위해 꼭 필요함--->
+		
+		<!-----서브메뉴 ------------------------>
+		
+	  	<!-----//서브메뉴 ------------------------>
+	   
+	   <!-----컨텐츠 ------------------------>
+	   <div id="content_area" >
+	   		<form name="frm" method="post">
+		  		<input type="hidden" name="probId" value="PROB_000000000004602"/>
+		  		<input type="hidden" name="organiz" value=""/>
+		  		<input type="hidden" name="overviewId" value=""/>
+		  		<input type="hidden" name="content" value=""/>
+				<input type="hidden" name="contentIndex" value="0"/>
+		  	</form>
+		  	<!--<h3 class="con_tit">채택문제</h3>-->
+		  	<div class="infoBox _adopt_top"  >
+		       <ul class="_h">
+		       		
+		       			<li class="type">2026 DATA·AI 분석 경진대회</li>
+		       		
+				   <li class="tit" id="title">수질·수문·기상 융합 기반 댐·하천 유해남조류(녹조) 7일 예측 AI 모델 개발</li>
+		            <li class="exp">한국수자원공사</li>
+		            <li class="_Dday"><span>일정</span><i id="dDayText"></i><i id="partcpntRange" style="font-size: 1.2rem; margin-left: 10px; display:none;">(참가신청 : 2026-09-15~2026-11-06)</i></li>
+		            
+		        </ul>
+		        
+				
+				    
+				       	
+				       	
+				       		<a id="partcpntOpenBtn" class="_btn_apply _adopt_apply" href="/competition/apply/partcpnt/regist.do?probId=PROB_000000000004602">참여하기</a>
+				       	
+				       	
+				       	
+				       	
+				       	
+				     
+				
+		     </div>
+		     	   		
+	   		<div class="_adopt_detail">
+	   			
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var context = '/competition';
+	function getContextPath(){
+		if('' == context){
+			return context;
+		}else{
+			return context;
+		}
+	}
+</script>
+
+
+<script type="text/javascript">
+	const adm = 'usr';
+	const isManager = 'false';
+	const isJudge = 'false';
+	const isPartcpnt = 'false';
+	const isApprove = 'false';
+    const isAuto = 'false';
+    const includeAuto = 'false';
+	const isAdmin = 'false';
+	const isLogin = 'false';
+	const canSubmitresult = '';
+	const isProblemRunning = 'true';
+	const isPartcpntPossible = 'true';
+	const isResultsubmitPossible = 'true';
+	const isOpenLeaderboard = 'false';
+	const isLeaderboardSettingY = 'false';
+    const isOpenWinner = 'true';
+	const degree = '1';
+	const canSubmitFinal = '';
+
+    console.log('includeAuto: ' + includeAuto);
+	
+    function setTabs(){
+        let list = g_overview;
+        let htmls = "";
+        const tabloc = document.querySelector('#lnb');
+
+        for (let i = 0; i < list.length; i++) {
+            htmls += '<a href="javascript:moveToMenu(' + i + ')"><li>' + list[i].title + '</li></a>';
+        }
+
+        htmls += '<a href="javascript:moveToMenu(\'community\')"><li>'+'QnA'+'</li></a>'; //모든 권한에서 표시되도록 변경하였음. 23경진대회
+        if(isAdmin == 'true' || isApprove == 'true' || isManager == 'true'){ // 커뮤니티 -> [ 관리자, 참가자, 문제관리자 ]
+            
+        }
+
+        // 리더보드 접근제한
+        // if (isAdmin == 'true' || isApprove == 'true' || isJudge == 'true' || isManager == 'true') { // 리더보드 -> [ 관리자, 참가자, 평가자, 문제관리자 ]
+        // 	if(isLeaderboardSettingY == 'true' && includeAuto == 'true'){
+        // 		htmls += '<a href="javascript:moveToMenu(\'leaderboard\')"><li>' + '리더보드' + '</li></a>';
+        // 	}
+        // }
+        
+        // 리더보드 전체공개
+        if(isLeaderboardSettingY == 'true' && includeAuto == 'true'){
+            htmls += '<a href="javascript:moveToMenu(\'leaderboard\')"><li>' + '리더보드' + '</li></a>';
+        }
+
+        if(isApprove == 'true'){ // 결과제출 -> [ 참가자 ]
+            htmls += '<a href="javascript:moveToMenu(\'submitAnswer\')"><li>'+'결과제출'+'</li></a>';
+        }
+
+        if(isJudge == 'true' && isAuto == 'false'){ // 평가하기 -> [ 평가자 ]
+            htmls += '<a href="javascript:moveToMenu(\'evaluate\')"><li>'+'평가하기'+'</li></a>';
+        }
+        
+        if(canSubmitFinal == 'true'){
+            htmls += '<a href="javascript:moveToMenu(\'finalsubmit\')"><li class="unik_orange">'+'최종제출'+'</li></a>';
+        }
+        
+        tabloc.innerHTML = htmls;
+    }
+
+    async function moveToMenu(val) {
+        await setViewValue(val);
+        if(val === 0 || val === 1) {
+            const href = window.location.href;
+            const link = href.substring(href.lastIndexOf('/'), href.lastIndexOf('.do'));
+            if(link === '/detail') {
+                loadOverviewContent(val);
+            } else {
+                document.frm.action="/competition/main/problem/PROB_000000000004602/detail.do";
+                document.frm.submit();
+            }
+        } else if(val === 'submitAnswer') {
+            if (isResultsubmitPossible == 'true' || isAdmin == 'true') {
+                document.frm.action = "/competition/problem/PROB_000000000004602/detail/submitAnswer.do";
+                document.frm.submit();
+            } else if (isProblemRunning != 'true') {
+                alert("종료된 문제입니다.");
+            } else {
+                alert("답변 제출기간이 아닙니다.");
+            }
+        } else if(val === 'community') {
+            document.frm.action="/competition/problem/PROB_000000000004602/detail/commuBoard.do";
+            document.frm.submit();
+        } else if(val === 'leaderboard') {
+            document.frm.action="/competition/problem/PROB_000000000004602/detail/leaderboard.do";
+            document.frm.submit();
+        } else if(val === 'evaluate') {
+            document.frm.action="/competition/problem/PROB_000000000004602/detail/evaluate.do";
+            document.frm.submit();
+        } else if(val === 'winners') {
+            document.frm.action="/competition/problem/PROB_000000000004602/detail/winners.do";
+            document.frm.submit();
+        } else if(val === 'finalsubmit') {
+            document.frm.action="/competition/problem/PROB_000000000004602/detail/finalsubmit.do";
+            document.frm.submit();
+        }
+    }
+
+    function setViewValue(val) {
+        return new Promise((resolve, reject) => {
+            document.frm.contentIndex.value = val;
+            g_curIndex = val;
+
+            if(val === 0 || val === 1) {
+                document.frm.content.value = g_overview[val].content;
+                document.frm.overviewId.value = g_overview[val].overviewId;
+            }
+            resolve();
+        });
+    }
+</script>
+
+<ul id="lnb">
+</ul>
+	   			
+	   			
+
+
+
+
+
+<!-- Styles -->
+<link rel="stylesheet" href="/competition/js/toastui-editor/tui-editor.css"></link>
+<link rel="stylesheet" href="/competition/js/toastui-editor/tui-editor-contents.css"></link>
+<link rel="stylesheet" href="/competition/js/toastui-editor/codemirror.css"></link>
+<link rel="stylesheet" href="/competition/js/toastui-editor/github.min.css"></link>
+<link rel="stylesheet" href="/competition/css/tui-styles.css"></link>
+<link rel="stylesheet" href="/competition/js/toastui-editor/tui-custom-contest.css"></link>
+<!-- Scripts -->
+<script src="/competition/js/toastui-editor/tui-editor-Editor-full.js"></script>
+
+<style>
+<!--
+span.etc a{
+	padding-left: 0px;
+}
+-->
+</style>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<div class="_conBox">
+<div class="_con">
+	<div class="news_text markdown-body" id="content">
+		<div id="overview_loc" class="tuiCustom"></div>
+	</div>
+	
+	
+	<div class="_attachBox" id="attachBox0" style="display:hide;">
+		<p>참가양식</p>
+		
+			
+		
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function fn_egov_downFile(atchFileId, fileSn, flag = "pass"){
+		if(flag == "false"){
+			alert("참가신청이 승인된 이용자만 다운로드할 수 있습니다.");
+		}else{
+			window.open("/competition/cmm/fms/FileDown.do?atchFileId="+atchFileId+"&fileSn="+fileSn+"");
+		}
+	}
+	
+	function fn_egov_deleteFile(atchFileId, fileSn) {
+		if(!confirm('파일은 즉시 삭제되며, 되돌릴 수 없습니다. \n 삭제하시겠습니까?')){
+			return false;
+		}else{
+			forms = document.getElementsByTagName("form");
+
+			for (var i = 0; i < forms.length; i++) {
+				if (typeof(forms[i].atchFileId) != "undefined" &&
+						typeof(forms[i].fileSn) != "undefined" &&
+						typeof(forms[i].fileListCnt) != "undefined") {
+					form = forms[i];
+				}
+			}
+			//form = document.forms[0];
+			form.atchFileId.value = atchFileId;
+			form.fileSn.value = fileSn;
+			
+			var formdata = new FormData(form);
+			$.ajax({
+				url : context+"/cmm/fms/deleteFileInfsCall.do",
+				data : formdata,
+				type : 'post',
+				contentType: false,
+				processData: false,
+			}).done(function(data, status, xhr) {
+				$('#'+fileSn).remove();
+				$('#'+fileSn+'_delete').remove();
+				alert("삭제되었습니다.");
+				form.fileListCnt.value = form.fileListCnt.value - 1;
+			}).fail(function(xhr, status, error) {
+				alert("내부서버 오류");
+			}).always(function() {
+				checkButton();
+			});
+		}
+	}
+
+function checkButton(){
+	var possible = (document.forms.applyForm.posblAtchFileNumber.value - document.forms.applyForm.fileListCnt.value) > 0 ? true : false;
+	if(possible){
+		
+		egovComFileUploader.disabled = false;		
+	}else{
+		egovComFileUploader.disabled = true;
+	}
+}
+</script>
+
+<input type="hidden" name="atchFileId" value="FILE_000000000003134">
+<input type="hidden" name="fileSn" >
+<input type="hidden" name="fileListCnt" value="1">
+      	
+      		
+      			
+      			
+					<a href="#LINK" onclick="javascript:fn_egov_downFile('FILE_000000000003134','0','anonymous')">
+				       
+					       
+					       
+							   
+							   	
+					       	    
+					       	    
+					       	    
+					       	   		<span class="hwp">
+					       	    
+					       	    
+					       	    
+					       	   
+					       	   		2026_참가신청서.hwp&nbsp;[130.0&nbsp;Kbyte]
+					       
+				       
+				       	</span>
+				       </a>
+      			
+      		
+        
+        
+	</div>
+	
+	<div class="_attachBox" id="attachBox1">
+		<p>샘플 데이터</p>
+		
+      		
+      		
+      			
+					
+				
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function fn_egov_downFile(atchFileId, fileSn, flag = "pass"){
+		if(flag == "false"){
+			alert("참가신청이 승인된 이용자만 다운로드할 수 있습니다.");
+		}else{
+			window.open("/competition/cmm/fms/FileDown.do?atchFileId="+atchFileId+"&fileSn="+fileSn+"");
+		}
+	}
+	
+	function fn_egov_deleteFile(atchFileId, fileSn) {
+		if(!confirm('파일은 즉시 삭제되며, 되돌릴 수 없습니다. \n 삭제하시겠습니까?')){
+			return false;
+		}else{
+			forms = document.getElementsByTagName("form");
+
+			for (var i = 0; i < forms.length; i++) {
+				if (typeof(forms[i].atchFileId) != "undefined" &&
+						typeof(forms[i].fileSn) != "undefined" &&
+						typeof(forms[i].fileListCnt) != "undefined") {
+					form = forms[i];
+				}
+			}
+			//form = document.forms[0];
+			form.atchFileId.value = atchFileId;
+			form.fileSn.value = fileSn;
+			
+			var formdata = new FormData(form);
+			$.ajax({
+				url : context+"/cmm/fms/deleteFileInfsCall.do",
+				data : formdata,
+				type : 'post',
+				contentType: false,
+				processData: false,
+			}).done(function(data, status, xhr) {
+				$('#'+fileSn).remove();
+				$('#'+fileSn+'_delete').remove();
+				alert("삭제되었습니다.");
+				form.fileListCnt.value = form.fileListCnt.value - 1;
+			}).fail(function(xhr, status, error) {
+				alert("내부서버 오류");
+			}).always(function() {
+				checkButton();
+			});
+		}
+	}
+
+function checkButton(){
+	var possible = (document.forms.applyForm.posblAtchFileNumber.value - document.forms.applyForm.fileListCnt.value) > 0 ? true : false;
+	if(possible){
+		
+		egovComFileUploader.disabled = false;		
+	}else{
+		egovComFileUploader.disabled = true;
+	}
+}
+</script>
+
+<input type="hidden" name="atchFileId" value="FILE_000000000003196">
+<input type="hidden" name="fileSn" >
+<input type="hidden" name="fileListCnt" value="1">
+      	
+      		
+      			
+      			
+					<a href="#LINK" onclick="javascript:fn_egov_downFile('FILE_000000000003196','0','anonymous')">
+				       
+					       
+					       
+							   
+							   	
+					       	    
+					       	    
+					       	    
+					       	    
+					       	   		<span class="excel">
+					       	    
+					       	    
+					       	   
+					       	   		04_sample_data_public.xlsx&nbsp;[44.8&nbsp;Kbyte]
+					       
+				       
+				       	</span>
+				       </a>
+      			
+      		
+        
+        
+      		
+      	
+		<p class="MT30">전체 데이터</p>
+		
+		
+      		
+      		
+				
+				
+					
+					
+				
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function fn_egov_downFile(atchFileId, fileSn, flag = "pass"){
+		if(flag == "false"){
+			alert("참가신청이 승인된 이용자만 다운로드할 수 있습니다.");
+		}else{
+			window.open("/competition/cmm/fms/FileDown.do?atchFileId="+atchFileId+"&fileSn="+fileSn+"");
+		}
+	}
+	
+	function fn_egov_deleteFile(atchFileId, fileSn) {
+		if(!confirm('파일은 즉시 삭제되며, 되돌릴 수 없습니다. \n 삭제하시겠습니까?')){
+			return false;
+		}else{
+			forms = document.getElementsByTagName("form");
+
+			for (var i = 0; i < forms.length; i++) {
+				if (typeof(forms[i].atchFileId) != "undefined" &&
+						typeof(forms[i].fileSn) != "undefined" &&
+						typeof(forms[i].fileListCnt) != "undefined") {
+					form = forms[i];
+				}
+			}
+			//form = document.forms[0];
+			form.atchFileId.value = atchFileId;
+			form.fileSn.value = fileSn;
+			
+			var formdata = new FormData(form);
+			$.ajax({
+				url : context+"/cmm/fms/deleteFileInfsCall.do",
+				data : formdata,
+				type : 'post',
+				contentType: false,
+				processData: false,
+			}).done(function(data, status, xhr) {
+				$('#'+fileSn).remove();
+				$('#'+fileSn+'_delete').remove();
+				alert("삭제되었습니다.");
+				form.fileListCnt.value = form.fileListCnt.value - 1;
+			}).fail(function(xhr, status, error) {
+				alert("내부서버 오류");
+			}).always(function() {
+				checkButton();
+			});
+		}
+	}
+
+function checkButton(){
+	var possible = (document.forms.applyForm.posblAtchFileNumber.value - document.forms.applyForm.fileListCnt.value) > 0 ? true : false;
+	if(possible){
+		
+		egovComFileUploader.disabled = false;		
+	}else{
+		egovComFileUploader.disabled = true;
+	}
+}
+</script>
+
+<input type="hidden" name="atchFileId" value="FILE_000000000003198">
+<input type="hidden" name="fileSn" >
+<input type="hidden" name="fileListCnt" value="1">
+      	
+      		
+      			
+      			
+					<a href="#LINK" onclick="javascript:fn_egov_downFile('FILE_000000000003198','0','false')">
+				       
+					       
+					       
+							   
+							   	
+					       	    
+					       	    
+					       	    
+					       	    
+					       	    
+					       	    	<span class="etc">
+					       	    
+					       	   
+					       	   		datas_participants.zip&nbsp;[2123.1&nbsp;Kbyte]
+					       
+				       
+				       	</span>
+				       </a>
+      			
+      		
+        
+        
+      		
+      	
+		
+
+	</div>
+</div>
+</div>
+<!-- contents end -->
+<script type="text/javascript">
+	$(window).load(() => {
+		const msg = '';
+		if (msg !== '') {
+			alert(msg);
+		}
+	});
+
+	async function loadOverviewContent(idx){
+		await setViewValue(idx);
+		setView();
+	}
+
+	const setView = () => {
+		createEditor(g_curIndex, g_overview[g_curIndex].content);
+		$('#content').show();
+
+		$('#editInfo').show();
+		$('#deleteInfo').show();
+		$('#editOverview').show();
+
+		$('#viewOverview').hide();
+		$('#saveOverview').hide();
+
+		if(g_curIndex != 1){
+			if('true' == 'true'){
+				$('#attachBox0').show();
+			}else{
+				$('#attachBox0').hide();
+			}
+			$('#attachBox1').hide();
+		}else{
+			if('true' == 'true'){
+				$('#attachBox0').hide();
+			}
+			$('#attachBox1').show();
+		}
+	}
+
+	function createEditor(index, text){
+		initVal = text;
+		window['viewer_'+index] = new tui.Editor.factory({
+		  	  el: document.querySelector('div[id="overview_loc"]'),
+		  	  viewer: true,
+		  	  initialValue: initVal
+		  	});	
+	}
+</script>
+	   			
+	   		</div>
+		    <div class="btnBox MT40">
+			    <div class="right">
+			    	<!-- <a class="btn_sm btn_darkGray" id="goList" href="javascript:fn_list()">메인</a> -->
+			    	
+			    	<a class="btn_sm btn_darkGray" id="goList" href="javascript:fn_goback()">뒤로</a>
+			    	
+			       	
+				</div>
+			</div>
+	   </div>
+	   <!-----//content_area -->
+		<p class="m_arrow"><a data-button="r2soft1"><img src="/competition/images/m_arrow_top_black.png" alt="맨위로"/></a></p>
+	</div>
+	<!-- wrap -->
+	
+
+
+
+<footer>
+  <ul>
+    <!--<li><span>홈</span><span>이용약관</span><span>개인정보처리방침</span></li>-->
+  	<li class="address">
+      <p>(우)34141 대전광역시 유성구 대학로 245 한국과학기술정보연구원 / Email : aidatacon@gmail.com</p>
+      <p class="copy">Copyright ⓒ KISTI. All Rights Reserved.</p>
+    </li>
+    
+  </ul>
+</footer>
+
+</body>
+</html>

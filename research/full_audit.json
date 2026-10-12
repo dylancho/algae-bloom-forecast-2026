@@ -1,0 +1,1203 @@
+{
+  "tables": {
+    "algae_measure.csv": {
+      "rows": 2939,
+      "columns": [
+        "station_id",
+        "station_name",
+        "rowno",
+        "swmn_code",
+        "river_lkmh_se",
+        "swmn_nm",
+        "swmn_detail_nm",
+        "detail_adres",
+        "chck_de",
+        "iem_wtrtp",
+        "iem_ph",
+        "iem_doc",
+        "iem_trp",
+        "iem_tur",
+        "iem_chla",
+        "iem_bgalage_cell_co",
+        "iem_bgalage_microsts",
+        "iem_bgalage_anba",
+        "iem_bgalage_osrtria",
+        "iem_bgalage_apzo",
+        "iem_geosm",
+        "iem_mib2",
+        "iem_microstlr",
+        "dominant_genus",
+        "over_caution"
+      ],
+      "missing_counts": {
+        "station_id": 0,
+        "station_name": 0,
+        "rowno": 2939,
+        "swmn_code": 0,
+        "river_lkmh_se": 0,
+        "swmn_nm": 0,
+        "swmn_detail_nm": 0,
+        "detail_adres": 0,
+        "chck_de": 0,
+        "iem_wtrtp": 402,
+        "iem_ph": 402,
+        "iem_doc": 402,
+        "iem_trp": 402,
+        "iem_tur": 402,
+        "iem_chla": 404,
+        "iem_bgalage_cell_co": 160,
+        "iem_bgalage_microsts": 265,
+        "iem_bgalage_anba": 265,
+        "iem_bgalage_osrtria": 265,
+        "iem_bgalage_apzo": 265,
+        "iem_geosm": 2525,
+        "iem_mib2": 2525,
+        "iem_microstlr": 2483,
+        "dominant_genus": 977,
+        "over_caution": 160
+      }
+    },
+    "asos_daily.csv": {
+      "rows": 32208,
+      "columns": [
+        "stnId",
+        "stnNm",
+        "tm",
+        "avgTa",
+        "maxTa",
+        "minTa",
+        "sumRn",
+        "hr1MaxRn",
+        "avgWs",
+        "maxWs",
+        "maxInsWs",
+        "avgRhm",
+        "sumSsHr",
+        "sumGsr",
+        "avgTd",
+        "avgPs",
+        "avgTca",
+        "avgTs"
+      ],
+      "missing_counts": {
+        "stnId": 0,
+        "stnNm": 0,
+        "tm": 0,
+        "avgTa": 27,
+        "maxTa": 15,
+        "minTa": 12,
+        "sumRn": 20679,
+        "hr1MaxRn": 24538,
+        "avgWs": 44,
+        "maxWs": 32,
+        "maxInsWs": 30,
+        "avgRhm": 68,
+        "sumSsHr": 139,
+        "sumGsr": 6320,
+        "avgTd": 61,
+        "avgPs": 33,
+        "avgTca": 5330,
+        "avgTs": 26
+      }
+    },
+    "dam_daily.csv": {
+      "rows": 79964,
+      "columns": [
+        "obs_date",
+        "dam_code",
+        "dam_name",
+        "suge",
+        "rwl",
+        "iqty",
+        "tdqty",
+        "edqty",
+        "spdqty",
+        "otltdqty",
+        "itqty",
+        "rf"
+      ],
+      "missing_counts": {
+        "obs_date": 0,
+        "dam_code": 0,
+        "dam_name": 0,
+        "suge": 0,
+        "rwl": 0,
+        "iqty": 4,
+        "tdqty": 0,
+        "edqty": 0,
+        "spdqty": 770,
+        "otltdqty": 0,
+        "itqty": 0,
+        "rf": 607
+      }
+    },
+    "dam_operation_api.csv": {
+      "rows": 1128,
+      "columns": [
+        "obs_date",
+        "suge",
+        "damnm",
+        "zerosevenhourprcptqy",
+        "prcptqy",
+        "pyacurf",
+        "vyacurf",
+        "oyaacurf",
+        "inflowqy",
+        "totdcwtrqy",
+        "totdcwtrqyjo",
+        "nowlowlevel",
+        "lastlowlevel",
+        "nyearlowlevel",
+        "nowrsvwtqy",
+        "lastrsvwtqy",
+        "nyearrsvwtqy",
+        "rsvwtrt",
+        "dvlpqyacmtlacmslt"
+      ],
+      "missing_counts": {
+        "obs_date": 0,
+        "suge": 0,
+        "damnm": 0,
+        "zerosevenhourprcptqy": 0,
+        "prcptqy": 0,
+        "pyacurf": 0,
+        "vyacurf": 0,
+        "oyaacurf": 0,
+        "inflowqy": 0,
+        "totdcwtrqy": 0,
+        "totdcwtrqyjo": 0,
+        "nowlowlevel": 0,
+        "lastlowlevel": 0,
+        "nyearlowlevel": 0,
+        "nowrsvwtqy": 0,
+        "lastrsvwtqy": 0,
+        "nyearrsvwtqy": 0,
+        "rsvwtrt": 0,
+        "dvlpqyacmtlacmslt": 0
+      }
+    },
+    "eval_pairs.csv": {
+      "rows": 2754,
+      "columns": [
+        "station_id",
+        "station_name",
+        "base_date",
+        "target_date",
+        "lag_days",
+        "split"
+      ],
+      "missing_counts": {
+        "station_id": 0,
+        "station_name": 0,
+        "base_date": 0,
+        "target_date": 0,
+        "lag_days": 0,
+        "split": 0
+      }
+    },
+    "sample_submission.csv": {
+      "rows": 124,
+      "columns": [
+        "station_id",
+        "base_date",
+        "target_date",
+        "pred_cells"
+      ],
+      "missing_counts": {
+        "station_id": 0,
+        "base_date": 0,
+        "target_date": 0,
+        "pred_cells": 0
+      }
+    },
+    "stations.csv": {
+      "rows": 5,
+      "columns": [
+        "station_id",
+        "station_name",
+        "swmn_code",
+        "swmn_nm",
+        "river_lake",
+        "section",
+        "suge",
+        "asos_stn_id",
+        "asos_stn_nm",
+        "asos_alt",
+        "service_start",
+        "note"
+      ],
+      "missing_counts": {
+        "station_id": 0,
+        "station_name": 0,
+        "swmn_code": 0,
+        "swmn_nm": 0,
+        "river_lake": 0,
+        "section": 0,
+        "suge": 0,
+        "asos_stn_id": 0,
+        "asos_stn_nm": 0,
+        "asos_alt": 4,
+        "service_start": 0,
+        "note": 1
+      }
+    }
+  },
+  "scope": "Train/valid diagnostics; no test-target scoring or model tuning.",
+  "split": [
+    {
+      "split": "excluded",
+      "n": 64,
+      "base_start": "2026-01-05T00:00:00.000",
+      "base_end": "2026-04-27T00:00:00.000",
+      "target_end": "2026-05-04T00:00:00.000"
+    },
+    {
+      "split": "test",
+      "n": 124,
+      "base_start": "2026-05-04T00:00:00.000",
+      "base_end": "2026-09-03T00:00:00.000",
+      "target_end": "2026-09-10T00:00:00.000"
+    },
+    {
+      "split": "train",
+      "n": 2310,
+      "base_start": "2012-04-02T00:00:00.000",
+      "base_end": "2024-12-30T00:00:00.000",
+      "target_end": "2025-01-06T00:00:00.000"
+    },
+    {
+      "split": "valid",
+      "n": 256,
+      "base_start": "2025-01-06T00:00:00.000",
+      "base_end": "2025-12-29T00:00:00.000",
+      "target_end": "2026-01-05T00:00:00.000"
+    }
+  ],
+  "lag_days": {
+    "4": {
+      "excluded": 4,
+      "test": 5,
+      "train": 51,
+      "valid": 6
+    },
+    "5": {
+      "excluded": 0,
+      "test": 1,
+      "train": 24,
+      "valid": 5
+    },
+    "6": {
+      "excluded": 3,
+      "test": 13,
+      "train": 167,
+      "valid": 14
+    },
+    "7": {
+      "excluded": 49,
+      "test": 88,
+      "train": 1853,
+      "valid": 209
+    },
+    "8": {
+      "excluded": 4,
+      "test": 12,
+      "train": 159,
+      "valid": 12
+    },
+    "9": {
+      "excluded": 0,
+      "test": 3,
+      "train": 28,
+      "valid": 5
+    },
+    "10": {
+      "excluded": 4,
+      "test": 2,
+      "train": 28,
+      "valid": 5
+    }
+  },
+  "station_year_counts": [
+    {
+      "year": 2012,
+      "CS": 0,
+      "DCHN": 45,
+      "GJGR": 0,
+      "HP": 0,
+      "MGMR": 0
+    },
+    {
+      "year": 2013,
+      "CS": 0,
+      "DCHN": 50,
+      "GJGR": 0,
+      "HP": 0,
+      "MGMR": 0
+    },
+    {
+      "year": 2014,
+      "CS": 0,
+      "DCHN": 51,
+      "GJGR": 0,
+      "HP": 0,
+      "MGMR": 0
+    },
+    {
+      "year": 2015,
+      "CS": 0,
+      "DCHN": 52,
+      "GJGR": 0,
+      "HP": 0,
+      "MGMR": 0
+    },
+    {
+      "year": 2016,
+      "CS": 57,
+      "DCHN": 52,
+      "GJGR": 52,
+      "HP": 52,
+      "MGMR": 0
+    },
+    {
+      "year": 2017,
+      "CS": 62,
+      "DCHN": 57,
+      "GJGR": 57,
+      "HP": 52,
+      "MGMR": 0
+    },
+    {
+      "year": 2018,
+      "CS": 60,
+      "DCHN": 54,
+      "GJGR": 56,
+      "HP": 52,
+      "MGMR": 0
+    },
+    {
+      "year": 2019,
+      "CS": 63,
+      "DCHN": 53,
+      "GJGR": 55,
+      "HP": 53,
+      "MGMR": 0
+    },
+    {
+      "year": 2020,
+      "CS": 54,
+      "DCHN": 52,
+      "GJGR": 52,
+      "HP": 52,
+      "MGMR": 34
+    },
+    {
+      "year": 2021,
+      "CS": 53,
+      "DCHN": 52,
+      "GJGR": 52,
+      "HP": 52,
+      "MGMR": 56
+    },
+    {
+      "year": 2022,
+      "CS": 60,
+      "DCHN": 52,
+      "GJGR": 58,
+      "HP": 56,
+      "MGMR": 63
+    },
+    {
+      "year": 2023,
+      "CS": 54,
+      "DCHN": 52,
+      "GJGR": 52,
+      "HP": 52,
+      "MGMR": 52
+    },
+    {
+      "year": 2024,
+      "CS": 58,
+      "DCHN": 58,
+      "GJGR": 58,
+      "HP": 53,
+      "MGMR": 58
+    },
+    {
+      "year": 2025,
+      "CS": 58,
+      "DCHN": 59,
+      "GJGR": 62,
+      "HP": 52,
+      "MGMR": 57
+    }
+  ],
+  "historical_missing_percent_by_year": [
+    {
+      "year": 2012,
+      "iem_bgalage_cell_co": 0.0,
+      "iem_wtrtp": 100.0,
+      "iem_chla": 100.0,
+      "iem_bgalage_microsts": 77.7777777778,
+      "iem_microstlr": 73.3333333333
+    },
+    {
+      "year": 2013,
+      "iem_bgalage_cell_co": 0.0,
+      "iem_wtrtp": 100.0,
+      "iem_chla": 100.0,
+      "iem_bgalage_microsts": 66.0,
+      "iem_microstlr": 100.0
+    },
+    {
+      "year": 2014,
+      "iem_bgalage_cell_co": 0.0,
+      "iem_wtrtp": 100.0,
+      "iem_chla": 100.0,
+      "iem_bgalage_microsts": 72.5490196078,
+      "iem_microstlr": 100.0
+    },
+    {
+      "year": 2015,
+      "iem_bgalage_cell_co": 0.0,
+      "iem_wtrtp": 100.0,
+      "iem_chla": 100.0,
+      "iem_bgalage_microsts": 0.0,
+      "iem_microstlr": 17.3076923077
+    },
+    {
+      "year": 2016,
+      "iem_bgalage_cell_co": 3.7558685446,
+      "iem_wtrtp": 24.4131455399,
+      "iem_chla": 24.4131455399,
+      "iem_bgalage_microsts": 3.7558685446,
+      "iem_microstlr": 82.6291079812
+    },
+    {
+      "year": 2017,
+      "iem_bgalage_cell_co": 0.4385964912,
+      "iem_wtrtp": 0.4385964912,
+      "iem_chla": 0.4385964912,
+      "iem_bgalage_microsts": 0.4385964912,
+      "iem_microstlr": 82.8947368421
+    },
+    {
+      "year": 2018,
+      "iem_bgalage_cell_co": 10.8108108108,
+      "iem_wtrtp": 10.8108108108,
+      "iem_chla": 11.7117117117,
+      "iem_bgalage_microsts": 10.8108108108,
+      "iem_microstlr": 90.990990991
+    },
+    {
+      "year": 2019,
+      "iem_bgalage_cell_co": 5.3571428571,
+      "iem_wtrtp": 5.3571428571,
+      "iem_chla": 5.3571428571,
+      "iem_bgalage_microsts": 5.3571428571,
+      "iem_microstlr": 90.1785714286
+    },
+    {
+      "year": 2020,
+      "iem_bgalage_cell_co": 5.3278688525,
+      "iem_wtrtp": 5.3278688525,
+      "iem_chla": 5.3278688525,
+      "iem_bgalage_microsts": 5.3278688525,
+      "iem_microstlr": 95.0819672131
+    },
+    {
+      "year": 2021,
+      "iem_bgalage_cell_co": 6.4150943396,
+      "iem_wtrtp": 6.4150943396,
+      "iem_chla": 6.4150943396,
+      "iem_bgalage_microsts": 6.4150943396,
+      "iem_microstlr": 96.9811320755
+    },
+    {
+      "year": 2022,
+      "iem_bgalage_cell_co": 5.8823529412,
+      "iem_wtrtp": 5.8823529412,
+      "iem_chla": 5.8823529412,
+      "iem_bgalage_microsts": 5.8823529412,
+      "iem_microstlr": 79.9307958478
+    },
+    {
+      "year": 2023,
+      "iem_bgalage_cell_co": 6.106870229,
+      "iem_wtrtp": 6.106870229,
+      "iem_chla": 6.106870229,
+      "iem_bgalage_microsts": 6.106870229,
+      "iem_microstlr": 98.4732824427
+    },
+    {
+      "year": 2024,
+      "iem_bgalage_cell_co": 0.701754386,
+      "iem_wtrtp": 0.701754386,
+      "iem_chla": 0.701754386,
+      "iem_bgalage_microsts": 0.701754386,
+      "iem_microstlr": 81.7543859649
+    },
+    {
+      "year": 2025,
+      "iem_bgalage_cell_co": 8.6805555556,
+      "iem_wtrtp": 8.6805555556,
+      "iem_chla": 8.6805555556,
+      "iem_bgalage_microsts": 8.6805555556,
+      "iem_microstlr": 79.1666666667
+    }
+  ],
+  "historical_nonnumeric_tokens": {
+    "iem_geosm": {
+      "정량한계미만": 94
+    },
+    "iem_mib2": {
+      "정량한계미만": 104
+    },
+    "iem_microstlr": {
+      "정량한계미만": 175
+    }
+  },
+  "historical_genus_sum_mismatches": 0,
+  "historical_dominant_missing_with_zero_target": 685,
+  "historical_dominant_missing_with_positive_target": 105,
+  "duplicate_base_keys": 0,
+  "duplicate_algae_keys": 0,
+  "duplicate_target_keys_by_split": {
+    "excluded": 0,
+    "test": 9,
+    "train": 32,
+    "valid": 10
+  },
+  "submission_matches_test_order": true,
+  "target_stats_by_split_station": [
+    {
+      "split": "train",
+      "station_id": "CS",
+      "n": 503,
+      "zero_fraction": 0.1908548708,
+      "high_fraction": 0.1729622266,
+      "median": 501.0,
+      "max": 122369.0,
+      "missing_base": 11
+    },
+    {
+      "split": "train",
+      "station_id": "DCHN",
+      "n": 668,
+      "zero_fraction": 0.3443113772,
+      "high_fraction": 0.0494011976,
+      "median": 127.0,
+      "max": 206126.0,
+      "missing_base": 4
+    },
+    {
+      "split": "train",
+      "station_id": "GJGR",
+      "n": 458,
+      "zero_fraction": 0.2598253275,
+      "high_fraction": 0.0873362445,
+      "median": 289.0,
+      "max": 121413.0,
+      "missing_base": 13
+    },
+    {
+      "split": "train",
+      "station_id": "HP",
+      "n": 431,
+      "zero_fraction": 0.3271461717,
+      "high_fraction": 0.0255220418,
+      "median": 93.0,
+      "max": 53063.0,
+      "missing_base": 13
+    },
+    {
+      "split": "train",
+      "station_id": "MGMR",
+      "n": 250,
+      "zero_fraction": 0.168,
+      "high_fraction": 0.16,
+      "median": 828.5,
+      "max": 447075.0,
+      "missing_base": 9
+    },
+    {
+      "split": "valid",
+      "station_id": "CS",
+      "n": 51,
+      "zero_fraction": 0.137254902,
+      "high_fraction": 0.1764705882,
+      "median": 1117.0,
+      "max": 33714.0,
+      "missing_base": 4
+    },
+    {
+      "split": "valid",
+      "station_id": "DCHN",
+      "n": 57,
+      "zero_fraction": 0.2807017544,
+      "high_fraction": 0.2456140351,
+      "median": 265.0,
+      "max": 194194.0,
+      "missing_base": 1
+    },
+    {
+      "split": "valid",
+      "station_id": "GJGR",
+      "n": 55,
+      "zero_fraction": 0.1454545455,
+      "high_fraction": 0.2727272727,
+      "median": 833.0,
+      "max": 106505.0,
+      "missing_base": 2
+    },
+    {
+      "split": "valid",
+      "station_id": "HP",
+      "n": 45,
+      "zero_fraction": 0.2666666667,
+      "high_fraction": 0.0222222222,
+      "median": 205.0,
+      "max": 33806.0,
+      "missing_base": 1
+    },
+    {
+      "split": "valid",
+      "station_id": "MGMR",
+      "n": 48,
+      "zero_fraction": 0.1458333333,
+      "high_fraction": 0.1875,
+      "median": 1173.0,
+      "max": 86064.0,
+      "missing_base": 3
+    }
+  ],
+  "target_stats_by_season": [
+    {
+      "split": "train",
+      "season": false,
+      "n": 1032,
+      "zero_fraction": 0.5067829457,
+      "high_fraction": 0.003875969
+    },
+    {
+      "split": "train",
+      "season": true,
+      "n": 1278,
+      "zero_fraction": 0.0821596244,
+      "high_fraction": 0.161971831
+    },
+    {
+      "split": "valid",
+      "season": false,
+      "n": 105,
+      "zero_fraction": 0.4380952381,
+      "high_fraction": 0.0
+    },
+    {
+      "split": "valid",
+      "season": true,
+      "n": 151,
+      "zero_fraction": 0.0264900662,
+      "high_fraction": 0.3178807947
+    }
+  ],
+  "train_crossing_2025": [
+    {
+      "station_id": "HP",
+      "base_date": "2024-12-30T00:00:00.000",
+      "target_date": "2025-01-06T00:00:00.000"
+    },
+    {
+      "station_id": "GJGR",
+      "base_date": "2024-12-30T00:00:00.000",
+      "target_date": "2025-01-06T00:00:00.000"
+    },
+    {
+      "station_id": "CS",
+      "base_date": "2024-12-30T00:00:00.000",
+      "target_date": "2025-01-06T00:00:00.000"
+    },
+    {
+      "station_id": "MGMR",
+      "base_date": "2024-12-30T00:00:00.000",
+      "target_date": "2025-01-06T00:00:00.000"
+    },
+    {
+      "station_id": "DCHN",
+      "base_date": "2024-12-30T00:00:00.000",
+      "target_date": "2025-01-06T00:00:00.000"
+    }
+  ],
+  "valid_crossing_2026": [
+    {
+      "station_id": "HP",
+      "base_date": "2025-12-29T00:00:00.000",
+      "target_date": "2026-01-05T00:00:00.000"
+    },
+    {
+      "station_id": "CS",
+      "base_date": "2025-12-29T00:00:00.000",
+      "target_date": "2026-01-05T00:00:00.000"
+    },
+    {
+      "station_id": "MGMR",
+      "base_date": "2025-12-29T00:00:00.000",
+      "target_date": "2026-01-05T00:00:00.000"
+    },
+    {
+      "station_id": "DCHN",
+      "base_date": "2025-12-29T00:00:00.000",
+      "target_date": "2026-01-05T00:00:00.000"
+    }
+  ],
+  "persistence": [
+    {
+      "year": 2021,
+      "window": "all",
+      "n": 247,
+      "rmse_log10": 0.9311319724294248,
+      "mae_log10": 0.59382194451615,
+      "r2_nse": -0.2163476473422854
+    },
+    {
+      "year": 2021,
+      "window": "May_Oct",
+      "n": 134,
+      "rmse_log10": 0.9665979994001438,
+      "mae_log10": 0.6587815958660378,
+      "r2_nse": -0.3063484280828943
+    },
+    {
+      "year": 2022,
+      "window": "all",
+      "n": 271,
+      "rmse_log10": 0.9170681633175792,
+      "mae_log10": 0.583267857286285,
+      "r2_nse": -0.15153248042656298
+    },
+    {
+      "year": 2022,
+      "window": "May_Oct",
+      "n": 162,
+      "rmse_log10": 0.8281455123815111,
+      "mae_log10": 0.5495490746183249,
+      "r2_nse": -0.24922317380524817
+    },
+    {
+      "year": 2023,
+      "window": "all",
+      "n": 248,
+      "rmse_log10": 0.9443904007915113,
+      "mae_log10": 0.6218948011816924,
+      "r2_nse": -0.8579523838865131
+    },
+    {
+      "year": 2023,
+      "window": "May_Oct",
+      "n": 132,
+      "rmse_log10": 0.9590495863386159,
+      "mae_log10": 0.6883477575586803,
+      "r2_nse": -0.914816479312293
+    },
+    {
+      "year": 2024,
+      "window": "all",
+      "n": 283,
+      "rmse_log10": 0.8749977264004833,
+      "mae_log10": 0.5752815210570074,
+      "r2_nse": 0.3713116869794283
+    },
+    {
+      "year": 2024,
+      "window": "May_Oct",
+      "n": 149,
+      "rmse_log10": 0.7746857243463753,
+      "mae_log10": 0.5496394562880007,
+      "r2_nse": 0.2906412002065031
+    },
+    {
+      "year": 2025,
+      "window": "all",
+      "n": 256,
+      "rmse_log10": 0.8910340814670877,
+      "mae_log10": 0.5858183725227802,
+      "r2_nse": -0.28004477285341833
+    },
+    {
+      "year": 2025,
+      "window": "May_Oct",
+      "n": 151,
+      "rmse_log10": 0.696975353854842,
+      "mae_log10": 0.489556056716764,
+      "r2_nse": -0.4258115300127361
+    }
+  ],
+  "persistence_2025_season_by_station": [
+    {
+      "station_id": "CS",
+      "n": 30,
+      "rmse_log10": 0.7110144874441675,
+      "mae_log10": 0.48957833852284843,
+      "r2_nse": -0.6409823797291005
+    },
+    {
+      "station_id": "DCHN",
+      "n": 32,
+      "rmse_log10": 0.6750289628727576,
+      "mae_log10": 0.4382992897691443,
+      "r2_nse": -0.46457872226492425
+    },
+    {
+      "station_id": "GJGR",
+      "n": 36,
+      "rmse_log10": 0.6610584511673747,
+      "mae_log10": 0.5293966225877895,
+      "r2_nse": -0.768100662733282
+    },
+    {
+      "station_id": "HP",
+      "n": 25,
+      "rmse_log10": 0.6026645171241696,
+      "mae_log10": 0.4507346403701884,
+      "r2_nse": -0.7867736599415811
+    },
+    {
+      "station_id": "MGMR",
+      "n": 28,
+      "rmse_log10": 0.819242268076042,
+      "mae_log10": 0.5315497397685057,
+      "r2_nse": -0.2993429047331395
+    }
+  ],
+  "missing_base_age_days": [
+    {
+      "split": "train",
+      "count": 50,
+      "median": 8.5,
+      "max": 49
+    },
+    {
+      "split": "valid",
+      "count": 11,
+      "median": 8.0,
+      "max": 42
+    }
+  ],
+  "persistence_2025_season_top5_raw_squared_error_fraction": 0.755653595017115,
+  "radiation_nonmissing_fraction_by_year": [
+    {
+      "year": 2012,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 1.0,
+      "의령군": 0.9480874317,
+      "창원": 0.0
+    },
+    {
+      "year": 2013,
+      "구미": 0.0,
+      "대구": 0.997260274,
+      "대전": 1.0,
+      "부산": 1.0,
+      "의령군": 1.0,
+      "창원": 0.0
+    },
+    {
+      "year": 2014,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 1.0,
+      "의령군": 1.0,
+      "창원": 0.0
+    },
+    {
+      "year": 2015,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 1.0,
+      "의령군": 1.0,
+      "창원": 0.2931506849
+    },
+    {
+      "year": 2016,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 1.0,
+      "의령군": 1.0,
+      "창원": 1.0
+    },
+    {
+      "year": 2017,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 1.0,
+      "의령군": 1.0,
+      "창원": 1.0
+    },
+    {
+      "year": 2018,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 0.7671232877,
+      "의령군": 0.997260274,
+      "창원": 0.9945205479
+    },
+    {
+      "year": 2019,
+      "구미": 0.0,
+      "대구": 0.9945205479,
+      "대전": 0.997260274,
+      "부산": 1.0,
+      "의령군": 0.9917808219,
+      "창원": 0.9095890411
+    },
+    {
+      "year": 2020,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 0.9836065574,
+      "부산": 0.9945355191,
+      "의령군": 0.9808743169,
+      "창원": 0.9972677596
+    },
+    {
+      "year": 2021,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 0.9671232877,
+      "부산": 0.9945205479,
+      "의령군": 1.0,
+      "창원": 1.0
+    },
+    {
+      "year": 2022,
+      "구미": 0.0054794521,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 0.9945205479,
+      "의령군": 1.0,
+      "창원": 0.997260274
+    },
+    {
+      "year": 2023,
+      "구미": 0.0,
+      "대구": 0.9945205479,
+      "대전": 1.0,
+      "부산": 0.997260274,
+      "의령군": 0.9890410959,
+      "창원": 1.0
+    },
+    {
+      "year": 2024,
+      "구미": 0.0,
+      "대구": 1.0,
+      "대전": 1.0,
+      "부산": 1.0,
+      "의령군": 1.0,
+      "창원": 1.0
+    },
+    {
+      "year": 2025,
+      "구미": 0.9534246575,
+      "대구": 0.997260274,
+      "대전": 0.9945205479,
+      "부산": 0.997260274,
+      "의령군": 1.0,
+      "창원": 1.0
+    },
+    {
+      "year": 2026,
+      "구미": 1.0,
+      "대구": 1.0,
+      "대전": 0.9960629921,
+      "부산": 0.9645669291,
+      "의령군": 0.9960629921,
+      "창원": 1.0
+    }
+  ],
+  "weather_quality_flags_present": [],
+  "radiation_by_station": [
+    {
+      "stnNm": "구미",
+      "n": 5368,
+      "observed": 604,
+      "missing_fraction": 0.8874813711
+    },
+    {
+      "stnNm": "대구",
+      "n": 5368,
+      "observed": 5362,
+      "missing_fraction": 0.0011177347
+    },
+    {
+      "stnNm": "대전",
+      "n": 5368,
+      "observed": 5346,
+      "missing_fraction": 0.0040983607
+    },
+    {
+      "stnNm": "부산",
+      "n": 5368,
+      "observed": 5266,
+      "missing_fraction": 0.0190014903
+    },
+    {
+      "stnNm": "의령군",
+      "n": 5368,
+      "observed": 5333,
+      "missing_fraction": 0.0065201192
+    },
+    {
+      "stnNm": "창원",
+      "n": 5368,
+      "observed": 3977,
+      "missing_fraction": 0.2591281669
+    }
+  ],
+  "dam_duplicate_keys": 0,
+  "dam_constant_numeric_columns": {
+    "군위": [
+      "otltdqty",
+      "itqty"
+    ],
+    "김천부항": [],
+    "남강": [],
+    "대청": [],
+    "대청조정지": [
+      "rf"
+    ],
+    "밀양": [],
+    "성덕": [],
+    "안동": [
+      "itqty"
+    ],
+    "안동조정지": [
+      "otltdqty",
+      "itqty",
+      "rf"
+    ],
+    "영주": [
+      "itqty"
+    ],
+    "용담": [],
+    "임하": [],
+    "임하조정지": [
+      "otltdqty",
+      "itqty",
+      "rf"
+    ],
+    "합천": [
+      "otltdqty",
+      "itqty"
+    ],
+    "합천조정지": [
+      "otltdqty",
+      "itqty",
+      "rf"
+    ]
+  },
+  "dam_coverage": [
+    {
+      "dam_name": "군위",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "김천부항",
+      "min": "2012-12-12",
+      "max": "2026-09-11",
+      "count": 5022
+    },
+    {
+      "dam_name": "남강",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5333
+    },
+    {
+      "dam_name": "대청",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "대청조정지",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "밀양",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "성덕",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5333
+    },
+    {
+      "dam_name": "안동",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "안동조정지",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5333
+    },
+    {
+      "dam_name": "영주",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5333
+    },
+    {
+      "dam_name": "용담",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "임하",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "임하조정지",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5333
+    },
+    {
+      "dam_name": "합천",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5368
+    },
+    {
+      "dam_name": "합천조정지",
+      "min": "2012-01-01",
+      "max": "2026-09-11",
+      "count": 5333
+    }
+  ],
+  "operations_date_range": [
+    "2026-06-10",
+    "2026-09-11"
+  ],
+  "operations_days": 94,
+  "train_valid_nearest_date_mismatches": [],
+  "train_valid_nearest_date_ties": 6
+}

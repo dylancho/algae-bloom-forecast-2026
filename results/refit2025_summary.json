@@ -1,0 +1,32 @@
+{
+  "selection_sha256": "ceec5a3d8f62dc472c82b8b1d5ecc7041fb5059a1091cdb5a506568857ce73b8",
+  "weights": {
+    "tabpfn_delta_full_all_2012": 0.5,
+    "lightgbm_delta_full_all_2017": 0.5
+  },
+  "training_policy": "Official train plus 2025 valid; target_date < 2026-01-01.",
+  "selection_changed": false,
+  "components": {
+    "tabpfn_delta_full_all_2012": {
+      "weight": 0.5,
+      "n_train": 2562,
+      "train_target_max": "2025-12-29 00:00:00",
+      "serialization_replay_verified": true
+    },
+    "lightgbm_delta_full_all_2017": {
+      "weight": 0.5,
+      "n_train": 2163,
+      "train_target_max": "2025-12-29 00:00:00",
+      "serialization_replay_verified": true
+    }
+  },
+  "difference_from_draft": {
+    "rows_changed": 122,
+    "mean_log10_shift": -0.009775206322495547,
+    "max_abs_log10_shift": 0.3290587192642247,
+    "rmse_log10_between_versions": 0.11970395914969023
+  },
+  "submission_sha256": "12be4edda1e287b6584b7856ae68c9117bc11d012f787975b87055783c31445e",
+  "submission_rows": 124,
+  "test_labels_used": false
+}

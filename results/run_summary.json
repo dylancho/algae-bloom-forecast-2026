@@ -1,0 +1,92 @@
+{
+  "selection_sha256": "ceec5a3d8f62dc472c82b8b1d5ecc7041fb5059a1091cdb5a506568857ce73b8",
+  "selected_weights": {
+    "tabpfn_delta_full_all_2012": 0.5,
+    "lightgbm_delta_full_all_2017": 0.5
+  },
+  "cv_mean_season_rmse": 0.7382945792205673,
+  "selection_metric": "Equal mean of 2021-2024 May-Oct log10 RMSE; provisional, not official combined score.",
+  "holdout_used_to_change_selection": false,
+  "test_labels_scored": false,
+  "training_policy": "Official train only; target_date < 2025-01-01; no valid-year refit.",
+  "tabpfn_configuration": "Public TabPFN-v2, CPU, one estimator (not latest TabPFN).",
+  "known_limitations": [
+    "Official combined metric and permission for valid-year refit unspecified.",
+    "Daily inputs lagged one day; algae assumed available on measurement date.",
+    "Rainfall blanks remain unknown; observed sums/fractions used.",
+    "Two conservative dam signals per station; detailed river network not modelled."
+  ],
+  "all": {
+    "selected": {
+      "n": 256,
+      "rmse_log10": 0.765398175102257,
+      "mae_log10": 0.5550372175164537,
+      "r2_nse": 0.10759683327421132
+    },
+    "persistence": {
+      "n": 256,
+      "rmse_log10": 0.8910340814670877,
+      "mae_log10": 0.5858183725227802,
+      "r2_nse": -0.28004477285341745
+    }
+  },
+  "May_Oct": {
+    "selected": {
+      "n": 151,
+      "rmse_log10": 0.6335032222274248,
+      "mae_log10": 0.4769111718269543,
+      "r2_nse": 0.0059904130890954255
+    },
+    "persistence": {
+      "n": 151,
+      "rmse_log10": 0.696975353854842,
+      "mae_log10": 0.489556056716764,
+      "r2_nse": -0.4258115300127354
+    }
+  },
+  "station_season": {
+    "CS": {
+      "n": 30,
+      "rmse_log10": 0.6847238866163087,
+      "mae_log10": 0.5085517034004059,
+      "r2_nse": 0.05047906053248852
+    },
+    "DCHN": {
+      "n": 32,
+      "rmse_log10": 0.6080138646402139,
+      "mae_log10": 0.4760867048522526,
+      "r2_nse": 0.0075513951726542405
+    },
+    "GJGR": {
+      "n": 36,
+      "rmse_log10": 0.602459165121231,
+      "mae_log10": 0.4831285592971286,
+      "r2_nse": -0.2322922552465887
+    },
+    "HP": {
+      "n": 25,
+      "rmse_log10": 0.5264115424951066,
+      "mae_log10": 0.3810491426493364,
+      "r2_nse": -0.130221563303353
+    },
+    "MGMR": {
+      "n": 28,
+      "rmse_log10": 0.7248375000041126,
+      "mae_log10": 0.5215501638448499,
+      "r2_nse": -0.032798451435503306
+    }
+  },
+  "submission_rows": 124,
+  "submission_sha256": "163c188b1754d80b14c7149b43c9a8924a9f7b28a7bb78ccd8cb2ad69440522c",
+  "submission_checks": "Keys/order, row count, integer dtype, finite/nonnegative values, saved-model inference.",
+  "source_sha256": {
+    "algae\\__init__.py": "e955261f9775814ecca25a1fffdcff6a1fefe57ac86bbf64fb20d0b1c6ac2bf1",
+    "algae\\experiment.py": "41b5d55a85eb127d5eed8bd83ba63425b4873f8f18da1217c5466c2b49b250e4",
+    "algae\\features.py": "93fd35fccba32f6703102336443e080f6b15f37f67a08d59a407492a37bc129a",
+    "algae\\finalize.py": "994d922259185ec26c15e199e49a252499ae2de77b72fe60597d23753d95d730",
+    "algae\\predict.py": "13d4bb5dfbbdde063679b2b453c1156eea7aba13f447bc150f7f339bc8d2e081",
+    "algae\\selection.py": "c35619d26005eb2f81a7d3bfe5896a39d5e952ffc11ff3270c08c1f870090798"
+  },
+  "independent_replay_identical": true,
+  "independent_replay_sha256": "163c188b1754d80b14c7149b43c9a8924a9f7b28a7bb78ccd8cb2ad69440522c"
+}
